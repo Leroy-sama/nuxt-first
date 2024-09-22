@@ -19,6 +19,10 @@ export default defineNuxtConfig({
 		},
 	},
 
+	image: {
+		domains: ["https://dummyjson.com/recipes"],
+	},
+
 	unhead: {
 		renderSSRHeadOptions: {
 			omitLineBreaks: false,
