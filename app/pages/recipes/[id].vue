@@ -23,31 +23,32 @@
 			<hr />
 		</div>
 
-		<!-- Image -->
-		<NuxtImg
-			:src="data?.image"
-			densities="x1"
-			sizes="xs:100vw sm:100vw md:100vw lg:100vw"
-			class="w-full max-h-[500px] object-cover rounded-md shadow-sm mb-12"
-			alt=""
-		/>
+		<div class="lg:grid lg:grid-cols-2 lg:gap-8 items-center">
+			<!-- Image -->
+			<NuxtImg
+				:src="data?.image"
+				densities="x1"
+				class="w-full aspect-[1/1] object-cover rounded-md shadow-sm mb-12"
+				alt=""
+			/>
 
-		<!-- Ingredients -->
-		<div class="mb-8">
-			<h2 class="text-3xl font-semibold mb-4">Ingredients</h2>
-			<ul class="grid grid-cols-1 md:grid-cols-2 gap-2 text-lg">
-				<li v-for="ingredient in data?.ingredients">
-					<label class="flex gap-2 items-center">
-						<input class="hidden peer" type="checkbox" />
-						<div
-							class="relative w-6 h-6 rounded-full border-2 border-dodgeroll-gold flex items-center justify-center peer-checked:after:absolute peer-checked:after:w-4 peer-checked:after:h-4 peer-checked:after:bg-dodgeroll-gold peer-checked:after:rounded-full"
-						></div>
-						<span class="peer-checked:line-through">
-							{{ ingredient }}
-						</span>
-					</label>
-				</li>
-			</ul>
+			<!-- Ingredients -->
+			<div class="mb-8">
+				<h2 class="text-3xl font-semibold mb-4">Ingredients</h2>
+				<ul class="grid grid-cols-1 md:grid-cols-2 gap-2 text-lg">
+					<li v-for="ingredient in data?.ingredients">
+						<label class="flex gap-2 items-center">
+							<input class="hidden peer" type="checkbox" />
+							<div
+								class="relative w-6 h-6 rounded-full border-2 border-dodgeroll-gold flex items-center justify-center peer-checked:after:absolute peer-checked:after:w-4 peer-checked:after:h-4 peer-checked:after:bg-dodgeroll-gold peer-checked:after:rounded-full"
+							></div>
+							<span class="peer-checked:line-through text-base">
+								{{ ingredient }}
+							</span>
+						</label>
+					</li>
+				</ul>
+			</div>
 		</div>
 
 		<!-- Instructions -->

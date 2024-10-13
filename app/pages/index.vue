@@ -8,12 +8,11 @@
 					<h1
 						class="text-4xl lg:text-6xl font-extrabold mb-6 text-balance"
 					>
-						Master the Kitchen with Ease: Unleash Your Inner Chef
-						Today!
+						Master the Kitchen with Ease
 					</h1>
-					<p class="text-xl lg:text-2xl mb-8 text-balance">
-						Discover recipes helping you to find the easiest way to
-						cook.
+					<p class="text-base lg:text-xl pb-4">
+						Unleash Your Inner Chef Today! Discover recipes helping
+						you to find the easiest way to cook.
 					</p>
 					<button
 						class="px-4 py-2 text-white self-start bg-dodgeroll-gold rounded-md text-lg cursor-pointer"
@@ -34,12 +33,12 @@
 		</section>
 		<section class="py-20 container">
 			<h2 class="text-3xl lg:text-5xl mb-2">Discover, Create, Share</h2>
-			<p class="text-lg lg:text-xl mb-8">
+			<p class="text-base lg:text-xl mb-8">
 				Check out our most popular recipes!
 			</p>
 			<div
 				v-if="!error"
-				class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8"
+				class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
 			>
 				<RecipeCard v-for="recipe in data?.recipes" :recipe="recipe" />
 			</div>

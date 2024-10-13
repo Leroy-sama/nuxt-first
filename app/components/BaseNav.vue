@@ -11,7 +11,7 @@
 				/>
 				<span class="text-3xl font-bold">Nuxtcipes</span>
 			</NuxtLink>
-			<ul class="flex gap-6 ml-auto text-xl font-bold capitalize">
+			<ul class="flex gap-6 ml-auto text-base font-bold capitalize">
 				<li>
 					<NuxtLink to="/">Home</NuxtLink>
 				</li>
